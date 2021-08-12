@@ -4,11 +4,15 @@ let newLi = document.createElement('li')
 newLi.classList.add('my-li-class')
 // add div element into HTML
 let newA = document.createElement('a')
+// assign a  class to newA
+newA.classList.add('my-a-class')
+newA.innerHTML='New menu link'
 // get menu
 let mainMenu = document.getElementById('main-nav').getElementsByTagName('ul')[0]
 
-// add our new element inside mainMenu
+// add our newLi element inside mainMenu, in the last position
 mainMenu.appendChild(newLi)
-mainMenu.appendChild(newA)
+// add element newA inside newLi
+newLi.appendChild(newA)
 
 
